@@ -1,0 +1,10 @@
+.red {
+    border: red solid 1px;
+  }
+
+.page {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #2a2c2f;
+    color: #ffffff;
+  }
