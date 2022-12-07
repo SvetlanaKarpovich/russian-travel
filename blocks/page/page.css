@@ -7,8 +7,10 @@
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
     background-color: #2a2c2f;
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
   }

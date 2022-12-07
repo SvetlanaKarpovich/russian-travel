@@ -1,5 +1,6 @@
 .intro {
   max-width: 1184px;
+  width: 100%;
   margin: 90px  auto 0;
   padding: 0;
   display: flex;
@@ -8,7 +9,8 @@
 }
 
 .__title {
-  width: 690px;
+  max-width: 690px;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 54px;
@@ -17,7 +19,8 @@
 }
 
 .__text {
-  width: 690px;
+  max-width: 690px;
+  width: 100%;
   margin: 40px 0 35px 0;
   padding: 0;
   font-size: 16px;
@@ -31,7 +34,8 @@
 }
 
 .__list {
-  width: 690px;
+  max-width: 690px;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -42,8 +46,7 @@
 
 @media screen and (max-width: 768px) {
   .intro {
-    width: 720px;
-    height: 429px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -51,20 +54,20 @@
 
 @media screen and (max-width: 768px) {
   .__title {
-    width: 720px;
+    max-width: 720px;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   .__text {
-    width: 720px;
+    max-width: 720px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .__list {
-    width: 720px;
+    max-width: 720px;
     margin: 0 auto;
   }
 }
@@ -74,14 +77,13 @@
     margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
-    width: 288px;
-    height: 754px;
+    min-width: 288px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .__title {
-    width: 288px;
+    min-width: 288px;
     margin: 0 auto;
     font-size: 32px;
     line-height: 35px;
@@ -90,13 +92,13 @@
 
 @media screen and (max-width: 320px) {
   .__text {
-    width: 288px;
+    min-width: 288px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .__list {
-    width: 288px;
+    min-width: 288px;
     margin: 0 auto;
   }
 }
