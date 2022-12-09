@@ -1,19 +1,16 @@
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter-Regular';
   src: url(../fonts/Inter-Regular.otf);
-  font-style: normal;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url(../fonts/Inter-Black.otf);
-  font-style: oblique;
-}
-
-@font-face {
-  font-family: "Inter";
+  font-family: 'Inter-Bold';
   src: url(../fonts/Inter-Bold.otf);
-  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Inter-Black';
+  src: url(../fonts/Inter-Black.otf);
 }
 
 .red {
@@ -28,6 +25,7 @@
   height: 100%;
   padding: 28px 1rem 24px;
   background-color: #2a2c2f;
+  font-family: 'Inter-Regular';
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -61,7 +59,6 @@
 .header__lang-links {
   margin: auto 0 0 0;
   padding: 0;
-  font-family: "Inter";
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -77,17 +74,16 @@
   line-height: 28px;
   font-weight: 400;
   text-decoration: none;
-  color: #FFFFFF;
   display: inline-block;
 }
 
-.header__lang-link_visited {
+.header__lang-link_active {
   text-decoration-line: underline;
   color: #ffffff;
 }
 
-.header__lang-link_unvisited {
-  text-decoration-line: underline;
+.header__lang-link_inactive {
+  text-decoration-line: none;
   color: #ffffff;
 }
 
@@ -152,11 +148,12 @@
   font-size: 96px;
   line-height: 100px;
   font-weight: 900;
+  font-family: 'Inter-Black';
   text-align: center;
 }
 
 .lead__subtitle {
-  margin: 32px auto 0;
+  margin: 32px auto 64px;
   max-width: 640px;
   font-size: 30px;
   line-height: 36px;
@@ -165,6 +162,7 @@
 }
 
 .lead__group {
+  margin: 0;
   max-width: 984px;
   width: 100%;
   display: flex;
@@ -198,6 +196,7 @@
   font-size: 54px;
   line-height: 58px;
   font-weight: 900;
+  font-family: 'Inter-Black';
 }
 
 .intro__text {
@@ -223,7 +222,12 @@
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  font-family: 'Inter-Bold';
   list-style: none;
+}
+
+.intro__list-number {
+  font-family: 'Inter-Regular';
 }
 
 /*@media screen and (max-width: 768px) {
@@ -349,7 +353,7 @@
   font-size: 72px;
   line-height: 76px;
   font-weight: 900;
-  color: #ffffff;
+  font-family: 'Inter-Black';
   text-align: left;
 }
 
@@ -406,7 +410,6 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: #ffffff;
 }
 
 .place__paragraph:last-of-type {
@@ -468,8 +471,9 @@
   filter: brightness(0.8);
 }
 
-.cover__image:hover {
+.cover:hover .cover__image {
   filter: brightness(0.5);
+  transition: all 0.3s ease;
 }
 
 .hgroup {
@@ -486,6 +490,7 @@
   font-size: 72px;
   line-height: 76px;
   font-weight: 900;
+  font-family: 'Inter-Black';
   text-align: center;
   z-index: 2;
 }
