@@ -1,0 +1,12 @@
+.lead {
+  max-width: 984px;
+  width: 100%;
+}
+
+.lead__backgroung-img {
+  width: 984px;
+  height: 615px;
+  background-image: url(../../images/lead-polka.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
